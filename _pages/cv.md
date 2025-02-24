@@ -52,7 +52,7 @@ Service and leadership
 ======
 
 - Marathon Track First-Aid Runner, First Respond 第一反应®
-- Volontario di Team26 | Winter Olympic 2026 (Under selection)
+- Volontario di Team26, Winter Olympic 2026 (Under selection)
 - Open-Day Induction Ambassador, Shenzhen College of International Education
 - Youth Volunteers Service Team "The Vest", Guangzhou Metro
 - Location Reporter, Guangdong Television

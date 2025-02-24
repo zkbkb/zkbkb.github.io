@@ -9,10 +9,10 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default"
-title                    : "Zhang,Kaibin / Academic Pages"
+title                    : "zkb / Academic Bio"
 title_separator          : "-"
 name                     : &name "Kaibin Zhang"
-description              : &description "Kaibin Zhang is an BA History, Politics and Economics student at University College London."
+description              : &description "BA History, Politics and Economics student at University College London."
 url                      : https://zkb.bio # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "zkbkb/zkbkb.github.io"
@@ -22,10 +22,10 @@ repository               : "zkbkb/zkbkb.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  #avatar           : "profile.png"
-  name             : "Kaibin Zhang"
-  pronouns         : "he/him"  
-  bio              : "Kaibin Zhang is an BA History, Politics and Economics student at University College London."
+  avatar           : "profile.png"
+  name             : "Zhang,Kaibin"
+  pronouns         : "He/Him"  
+  bio              : "BA History, Politics and Economics student at UCL."
   location         : "London, UK"
   employer         : "University College London"
   uri              : "https://zkb.bio"
@@ -50,7 +50,7 @@ author:
   #stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 
   # Social media
-  bluesky          : "bsky.app" # Replace this with you Bluesky username
+  bluesky          : # Replace this with you Bluesky username
   facebook         : # Username
   flickr           : # Username
   foursquare       : # Username

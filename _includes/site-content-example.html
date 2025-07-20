@@ -1,0 +1,62 @@
+<!-- 网站内容统一配置使用示例 -->
+<!-- 这个文件展示了如何在模板中使用site-content.yml中的配置 -->
+
+<!-- 1. 获取基本站点信息 -->
+{% assign site_title = site.site_content.site_info.title %} {% assign site_description = site.site_content.site_info.description %}
+
+<!-- 2. 获取作者信息 -->
+{% assign author_name = site.site_content.author.name %} {% assign author_bio = site.site_content.author.bio %} {% assign author_location = site.site_content.author.location %}
+
+<!-- 3. 获取导航菜单 -->
+{% assign navigation_items = site.site_content.navigation.main %}
+
+<!-- 4. 获取页面信息 -->
+{% assign page_title = site.site_content.pages.home.title %} {% assign page_description = site.site_content.pages.home.description %}
+
+<!-- 5. 获取UI文本 -->
+{% assign common_text = site.site_content.ui_text.common %} {% assign nav_text = site.site_content.ui_text.navigation %} {% assign content_text = site.site_content.ui_text.content %}
+
+<!-- 使用示例 -->
+<div class="site-content-example">
+    <!-- 站点标题 -->
+    <h1>{{ site_title }}</h1>
+    <p>{{ site_description }}</p>
+
+    <!-- 作者信息 -->
+    <div class="author-info">
+        <h2>{{ author_name }}</h2>
+        <p>{{ author_bio }}</p>
+        <p>📍 {{ author_location }}</p>
+    </div>
+
+    <!-- 导航菜单 -->
+    <nav class="main-navigation">
+        <ul>
+            {% for item in navigation_items %}
+            <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+            {% endfor %}
+        </ul>
+    </nav>
+
+    <!-- 页面内容 -->
+    <div class="page-content">
+        <h2>{{ page_title }}</h2>
+        <p>{{ page_description }}</p>
+    </div>
+
+    <!-- UI文本 -->
+    <div class="ui-elements">
+        <button>{{ common_text.more }}</button>
+        <span>{{ nav_text.previous }}</span>
+        <span>{{ nav_text.next }}</span>
+        <p>{{ content_text.tags_label }}</p>
+    </div>
+</div>
+
+<!-- 使用Liquid过滤器的方式 -->
+<div class="filter-example">
+    <!-- 使用过滤器获取内容 -->
+    <h3>{{ 'site_info.title' | get_site_content }}</h3>
+    <p>{{ 'common' | get_ui_text: 'more' }}</p>
+    <p>{{ 'home' | get_page_info: 'title' }}</p>
+</div>
